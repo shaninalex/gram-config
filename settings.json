@@ -1,74 +1,116 @@
-// Zed settings
+// Gram settings
 //
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
+// For information on how to configure Gram, see the Gram
+// documentation: gram://docs/configuring-gram
 //
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
+// To see all of Gram's default settings without changing your
+// custom settings, run `gram: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "cli_default_open_behavior": "existing_window",
-  "preview_tabs": {
-    "enabled": true,
-  },
-  "prettier": {
-    "allowed": true,
-  },
-  "formatter": "prettier",
-  "format_on_save": "on",
-  "languages": {
-    "C": {
-      "formatter": "language_server",
-      "format_on_save": "on",
-    },
-    "C++": {
-      "formatter": "language_server",
-      "format_on_save": "on",
-    },
-    "Go": {
-      "format_on_save": "on",
-      "formatter": "language_server",
-      "tab_size": 4,
-      "hard_tabs": true,
-    },
-  },
-  "buffer_font_family": "Hack Nerd Font Mono",
-  "close_on_file_delete": true,
-  "base_keymap": "JetBrains",
-  "git_panel": {
-    "status_style": "icon",
-  },
-  "outline_panel": {
-    "indent_size": 20.0,
-  },
-  "project_panel": {
-    "dock": "left",
-    "indent_size": 20.0,
-    "sticky_scroll": false,
-  },
-  "autosave": "on_focus_change",
+  "vim_mode": true,
   "icon_theme": "Material Icon Theme",
+  "autosave": "on_focus_change",
+  "buffer_font_family": "Hack Nerd Font",
   "git": {
     "inline_blame": {
       "enabled": false,
     },
+    "blame": {
+      "show_avatar": false,
+    },
   },
-  "collaboration_panel": {
-    "button": false,
+  "node": {
+    "allow_prettier_download": true,
+    "allow_npm_install": true,
+    "allow_binary_download": true,
   },
-  "title_bar": {
-    "show_sign_in": false,
-  },
-  "disable_ai": true,
-  "ui_font_size": 15.0,
   "buffer_line_height": "standard",
-  "buffer_font_size": 13.0,
+  "lsp": {
+    "vscode-css-language-server": {
+      "binary": {
+        "enable_auto_updates": true,
+        "ignore_system_version": true,
+        "allow_binary_download": true
+      },
+      "enable_lsp_tasks": true
+    },
+    "vtsls": {
+      "binary": {
+        "allow_binary_download": true
+      },
+      "enable_lsp_tasks": true
+    },
+    "yaml-language-server": {
+      "binary": {
+        "enable_auto_updates": true,
+        "ignore_system_version": true,
+        "allow_binary_download": true,
+      },
+      "enable_lsp_tasks": true,
+    },
+    "basedpyright": {
+      "binary": {
+        "enable_auto_updates": true,
+        "ignore_system_version": true,
+        "allow_binary_download": true,
+      },
+      "enable_lsp_tasks": true,
+    },
+    "ruff": {
+      "binary": {
+        "enable_auto_updates": true,
+        "ignore_system_version": true,
+        "allow_binary_download": true,
+      },
+      "enable_lsp_tasks": true,
+    },
+    "eslint": {
+      "binary": {
+        "allow_binary_download": true,
+        "ignore_system_version": true,
+        "enable_auto_updates": true,
+      },
+      "enable_lsp_tasks": true,
+    },
+    "gopls": {
+      "binary": {
+        "enable_auto_updates": true,
+        "ignore_system_version": true,
+        "allow_binary_download": true,
+      },
+      "enable_lsp_tasks": true,
+    },
+    "tailwindcss-language-server": {
+      "binary": {
+        "enable_auto_updates": true,
+        "allow_binary_download": true,
+        "ignore_system_version": true,
+      },
+      "enable_lsp_tasks": true,
+    },
+    "ols": {
+      "binary": {
+        "enable_auto_updates": true,
+        "ignore_system_version": true,
+        "allow_binary_download": true,
+      },
+      "enable_lsp_tasks": true,
+    },
+  },
+  "project_panel": {
+    "folder_icons": true,
+    "file_icons": true,
+    "sticky_scroll": false,
+  },
+  "sticky_scroll": {
+    "enabled": false,
+  },
+  "base_keymap": "JetBrains",
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
   "theme": {
     "mode": "system",
-    "light": "One Light",
+    "light": "Melange Light",
     "dark": "One Dark",
-  },
-  "file_types": {
-    "Markdown": ["prompt"],
   },
 }
